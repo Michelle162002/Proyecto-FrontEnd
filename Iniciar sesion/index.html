@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/Iniciar_sesion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__wrapper seccion1">
+
+            <div class="header__main">
+                <div class="btn__mq2">
+                    <button class="btn__menu open">
+                        &#9776;
+                    </button>
+                    <div class="buscadormq"><button type="submit" class="fas fa-search  "></button>
+                        <input class="buscarmq open-mobile" type="text" placeholder="Buscar">
+                    </div>
+                </div>
+
+                <div class="header__logo">
+                    <figure class="figure__logo">
+                        <img class="imagen__logo"
+                            src="https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000D3E/es-PE/images/logo/Logotipo.png"
+                            alt="">
+                    </figure>
+                </div>
+
+
+                <div class="header__buscador">
+                    <div class="buscador"><button type="submit" class="fas fa-search  "></button>
+                        <input class="buscar" type="text" placeholder="Buscar">
+                    </div>
+                </div>
+
+
+                <div class="header__links">
+                    <li>
+                        <a href="#" class="lih link__Micuenta">
+                            <button class="fas fa-user"></button>
+                            <p class="text__header__link mc">Iniciar Sesión</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="lih link__Carrito">
+                            <button class="fas fa-shopping-cart"></button>
+                            <div class="car__div">
+                                <p class="text__header__link car" id="Carrito__contador">0</p>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <div class="patron__header"></div>
+        </div>
+
+        <div class="header__wrapper seccion2">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a href="#" class="header__navlink">Mujer</a></li>
+                    <li><a href="#" class="header__navlink">Hombre</a></li>
+                    <li><a href="#" class="header__navlink">Tecnología</a></li>
+                    <li><a href="#" class="header__navlink">Hogar</a></li>
+                    <li><a href="#" class="header__navlink">Deporte</a></li>
+                    <li><a href="#" class="header__navlink">Tienda y marcas</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__wrapper seccion3">
+            <p>BIENVENIDOS A WASIO</p>
+        </div>
+
+    </header>
+    <main class="main">
+        <aside class="aside__bar ">
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="#" data-title="Mujer"><span><span></span></span></a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="#" data-title="Hombre"><span><span></span></span></a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="#" data-title="Tecnología"><span><span></span></span></a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="#" data-title="Hogar"><span><span></span></span></a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="#" data-title="Deporte"><span><span></span></span></a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="#" data-title="Tienda y marcas"><span><span></span></span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+        
+        <div class="section__wrapper">
+            <div class="div__inicia">
+                <h2>INICIA SESIÓN CON</h2>
+                <label for="">Correo Electrónico</label>
+                <input type="text">
+                <label for="">Contraseña</label>
+                <input type="text">
+                <button>ENTRAR</button>
+                <a href=""> <p class="link__inicia">Olvidaste tu contraseña? </p> </a>
+            </div>
+            <div class="div__registrate">
+                <h2>¿LA PRIMERA VEZ AQUÍ?</h2>
+                <li>> Rastreo de pedidos</li>
+                <li>> Formas de pago</li>
+                <li>> Excelente Asistencia al Cliente</li>
+                <p>¡Regístrate ahora! Es fácil y gratis.</p>
+                <button>REGÍSTRATE AHORA</button>
+            </div>
+        </div>
+
+
+    </main>
+    <script>
+        const btnHeaderMenu = document.querySelector("button.btn__menu");
+        const asideSideBar = document.querySelector("aside.aside__bar");
+        btnHeaderMenu.onclick = e => {
+            asideSideBar.classList.toggle("open");
+        }
+    </script>
+    <script>
+        const btnBuscadorMenu = document.querySelector("button.fa-search");
+        const InputBuscador = document.querySelector("input.buscarmq");
+        btnBuscadorMenu.onclick = e => {
+            InputBuscador.classList.toggle("open-mobile");
+        }
+    </script>
+</body>
+
+</html>
