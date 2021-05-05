@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Productos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__wrapper seccion1">
+
+            <div class="header__main">
+                <div class="header__logo">
+                    <figure class="figure__logo">
+                        <img class="imagen__logo"
+                            src="https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000D3E/es-PE/images/logo/Logotipo.png"
+                            alt="">
+                    </figure>
+                </div>
+
+
+               
+
+                <div class="header__links">
+                    <li>
+                        <a href="#" class="lih link__Micuenta">
+                            <button class="fas fa-user"></button>
+                            <p class="text__header__link mc">Iniciar Sesión</p>
+                        </a>
+                    </li>
+                    
+                </div>
+            </div>
+            <div class="patron__header"></div>
+        </div>
+
+       
+        <div class="header__wrapper seccion2">
+           
+        </div>
+
+    </header>
+
+    <main class="main">
+        <nav class="aside__bar ">
+            <div class="sidebar__profile">
+                
+                <button class="sidebar__menu open-mobile">
+                    &#9776
+                </button>
+            </div>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-desktop "></i>  <p class="sidebar__text"> Registro de ventas </p> 
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                            <i class="fas fa-th    "></i>   <p class="sidebar__text"> Productos </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-plus    "></i>  <p class="sidebar__text"> Crear producto </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-user-plus    "></i> <p class="sidebar__text">Crear marca </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-sliders-h    "></i>   <p class="sidebar__text"> Ajustes </p>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+       </nav>
+        <section class="section__listaproductos">
+            <div class="primeraparte__lp">
+            <h1 class="title__listaproductos">Productos</h1>
+            <div class="btn__admin__listaproductos">
+             <button class="btn_admin_lp btnlp1"><i class="fas fa-plus    "></i></button>
+             <button class="btn_admin_lp btnlp2"> <i class="fas fa-sync    "></i></button>
+            <button class="btn_admin_lp btnlp3"> <i class="fas fa-trash    "></i></button>
+            </div>
+            </div>
+            <div class="div_sec_listaproductos">
+                <div class="sec_subtitlefaslist"> <i class="fas fa-list    "></i><h2 class="subtitile__listaprod">Lista de productos</h2></div>
+                <table class="section__tableproductos">
+
+                    <tr>
+                        <th><input type="checkbox"></th>
+                        <th>Producto</th>
+                        <th>Categoria</th>
+                        <th>Stock</th>
+                        <th>Editar</th>
+                        <th>Eliminar</th>
+
+                      </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Nombre del producto</td>
+                      <td>Mujer</td>
+                      <td>4</td>
+                      <td><button> <i class="fas fa-edit    "></i></button></td>
+                      <td> <button><i class="fas fa-trash   "></i></button></td>
+                    </tr>
+                  
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>Nombre del producto</td>
+                      <td>Hombre</td>
+                      <td>2</td>
+                      <td><button><i class="fas fa-edit    "></i></button></td>
+                      <td><button><i class="fas fa-trash    "></i></button></td>
+
+                     
+                    </tr>
+                  
+                  </table>
+               </div>
+        </section>
+    </main>
+    <footer>
+       
+    </footer>
+    <script>
+        const btnHeaderMenu = document.querySelector("button.header__menu");
+        const asideSideBar = document.querySelector("nav.aside__bar");
+        btnHeaderMenu.onclick = e => {
+          asideSideBar.classList.toggle("open");
+        }
+      </script>
+      <script>
+        const btnSideBarMenu = document.querySelector("button.sidebar__menu");
+    btnSideBarMenu.onclick = e => {
+      asideSideBar.classList.toggle("open-mobile");
+    }
+      </script>
+      <script>
+          const mql = window.matchMedia('(max-width:500px)');
+    function screenTest(e) {
+      e.matches && asideSideBar.classList.remove("open");
+    }
+    mql.addListener(screenTest);
+      </script>
+</body>
+
+</html>
