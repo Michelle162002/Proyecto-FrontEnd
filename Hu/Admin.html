@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__wrapper seccion1">
+
+            <div class="header__main">
+                <div class="header__logo">
+                    <figure class="figure__logo">
+                        <img class="imagen__logo"
+                            src="https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000D3E/es-PE/images/logo/Logotipo.png"
+                            alt="">
+                    </figure>
+                </div>
+
+
+               
+
+                <div class="header__links">
+                    <li>
+                        <a href="#" class="lih link__Micuenta">
+                            <button class="fas fa-user"></button>
+                            <p class="text__header__link mc">Iniciar Sesión</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="lih link__Carrito">
+                            <button class="fas fa-shopping-cart"></button>
+                            <div class="car__div">
+                                <p class="text__header__link car" id="Carrito__contador">0</p>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <div class="patron__header"></div>
+        </div>
+
+       
+        <div class="header__wrapper seccion2">
+           
+        </div>
+
+    </header>
+
+    <main class="main">
+        <aside class="aside__bar ">
+            <div class="sidebar__profile">
+                
+                <button class="sidebar__menu open-mobile">
+                    &#9776
+                </button>
+            </div>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-desktop "></i>  <p class="sidebar__text"> Registro de ventas </p> 
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                            <i class="fas fa-th    "></i>   <p class="sidebar__text"> Productos </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-plus    "></i>  <p class="sidebar__text"> Crear producto </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-user-plus    "></i> <p class="sidebar__text">Crear marca </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-sliders-h    "></i>   <p class="sidebar__text"> Ajustes </p>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+        <section class="section__crear">
+            <div class="Crear__producto">
+                <div class="input1"> <label for="">Nombre:</label> <input type="text"> </div>
+                <div class="input2"> <label for="">Descripción:</label> <input type="text"></div>
+                <div class="papa">
+                <div class="input3">
+                    <div class="div__input4"> 
+                        <label for="">Categoría:</label> 
+                          <select  class="selector" name="categoria">
+                            <option>Mujer</option>
+                            <option>Hombre</option>
+                            <option>Tecnología</option>
+                            <option>Hogar</option>
+                            <option>Deporte</option>
+                          </select>
+                        </div>
+                    <div class="div__input4"><label for="">Codigo:</label> <input type="text"></div>
+                    <div class="div__input4"><label for="">Precio:</label> <input type="number"></div>
+                </div>
+                <div class="input4">
+                    <div class="div__input4"><label  for="">Marca:</label> <input type="text"></div>
+                    <div class="div__input4"><label  for="">Stock:</label> <input type="numbe</div>r"></div>
+                    <div class="div__input4"><label  for="">Descuento:</label> <input type="number"></div>
+                   
+                </div>
+            </div>
+            </div>
+            <div class="Btns__crear">
+                <button  class="btn__crear btn1"> <i class="fas fa-upload    "></i> <p> Crear  </p></button>
+                <button class="btn__crear btn2"> <i class="fas fa-chevron-left    "></i> <p> Limpiar </p></button>
+                <button class="btn__crear btn3"> <i class="fas fa-ban    "></i> <p> Cancelar </p></button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+       
+    </footer>
+    <script>
+        const btnHeaderMenu = document.querySelector("button.header__menu");
+        const asideSideBar = document.querySelector("aside.aside__bar");
+        btnHeaderMenu.onclick = e => {
+          asideSideBar.classList.toggle("open");
+        }
+      </script>
+      <script>
+        const btnSideBarMenu = document.querySelector("button.sidebar__menu");
+    btnSideBarMenu.onclick = e => {
+      asideSideBar.classList.toggle("open-mobile");
+    }
+      </script>
+      <script>
+          const mql = window.matchMedia('(max-width:500px)');
+    function screenTest(e) {
+      e.matches && asideSideBar.classList.remove("open");
+    }
+    mql.addListener(screenTest);
+      </script>
+</body>
+
+</html>
