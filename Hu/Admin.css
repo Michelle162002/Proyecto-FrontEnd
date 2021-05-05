@@ -206,6 +206,12 @@
     .input2 > input {
         height: 80px;
     }
+    .input2 > textarea {
+        height: 80px;
+        font-family:   sans-serif;;
+        padding: 10px;
+        margin-left: 15px;
+    }
     .papa {
         display: flex;
         flex-direction: row;
