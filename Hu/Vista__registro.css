@@ -18,13 +18,13 @@ ul, li {list-style: none;}
     display: flex;
     min-height: calc(100vh - 120px);
     justify-content: center;
-    
 }
 .mainsect_registro {
-    width: 900px;
-    margin: 40px 0;
+    min-width: 500px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
+    
 }
 
 .cuadro_inputsregistro {
@@ -73,3 +73,13 @@ ul, li {list-style: none;}
     text-decoration: none;
     color: rgb(110, 110, 110);
 }
+@media (max-width:900px) {
+.cuadro_inputsregistro > input {
+    width: 400px;
+}
+}
+@media (max-width:500px) {
+    .cuadro_inputsregistro > input {
+        width: 300px;
+    }
+    }
