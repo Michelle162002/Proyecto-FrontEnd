@@ -1,0 +1,75 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px  
+}
+header {
+    height: 120px;
+    background-color: #aaa;
+}
+ul, li {list-style: none;}
+/*----------MAIN--------------*/
+.main_Vregistro {
+    display: flex;
+    min-height: calc(100vh - 120px);
+    justify-content: center;
+    
+}
+.mainsect_registro {
+    width: 900px;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadro_inputsregistro {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 10px;
+    margin: 20px;
+}
+.cuadro_inputsregistro > input {
+    margin-left: 15px;
+    height: 25px;
+    width: 500px;
+    padding-left: 8px;
+    border: 1px solid rgb(194, 194, 194);
+}
+::placeholder {
+    color: rgb(194, 194, 194);
+}
+.aceptacion_registro {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 15px 0 5px 0;
+    align-items: center;
+}
+.btn_Vregistro {
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(221, 85, 89);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    font-family:'Montserrat', sans-serif ;
+    
+}
+.link_Vregistro {
+    font-size: 12px;
+    padding: 10px 0 0 25px ;
+}
+.link_Vregistro > a {
+    text-decoration: none;
+    color: rgb(110, 110, 110);
+}
