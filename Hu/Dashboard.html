@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header__wrapper seccion1">
+
+            <div class="header__main">
+                <div class="header__logo">
+                    <figure class="figure__logo">
+                        <img class="imagen__logo"
+                            src="https://aws-samishop-recursos.s3.us-east-1.amazonaws.com/00000D3E/es-PE/images/logo/Logotipo.png"
+                            alt="">
+                    </figure>
+                </div>
+
+
+               
+
+                <div class="header__links">
+                    <li>
+                        <a href="#" class="lih link__Micuenta">
+                            <button class="fas fa-user"></button>
+                            <p class="text__header__link mc">Iniciar Sesión</p>
+                        </a>
+                    </li>
+                    
+                </div>
+            </div>
+            <div class="patron__header"></div>
+        </div>
+
+       
+        <div class="header__wrapper seccion2">
+           
+        </div>
+
+    </header>
+
+    <main class="main">
+        <aside class="aside__bar ">
+            <div class="sidebar__profile">
+                
+                <button class="sidebar__menu open-mobile">
+                    &#9776
+                </button>
+            </div>
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-desktop "></i>  <p class="sidebar__text"> Registro de ventas </p> 
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                            <i class="fas fa-th    "></i>   <p class="sidebar__text"> Productos </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-plus    "></i>  <p class="sidebar__text"> Crear producto </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-user-plus    "></i> <p class="sidebar__text">Crear marca </p>
+                        </a>
+                    </li>
+                    <li class="sidebar__ite">
+                        <a class="sidebar__link" href="">
+                           <i class="fas fa-sliders-h    "></i>   <p class="sidebar__text"> Ajustes </p>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </aside>
+       <div class="alldash">
+        <div class="dash__wrapper"> 
+        <div class="dd1">
+            <div class="div_dash">
+            <p> Por entregar </p> 
+        <div class="div_dash_fas">
+            <p> 0 </p>  <div class="fasdash"> <i class="fas fa-arrow-down    "></i></div>
+        </div>
+        </div>
+            <div class="div_dash">
+            <p> Entregados </p> 
+        <div class="div_dash_fas">
+            <p> 0 </p>  <div class="fasdash"> <i class="fas fa-arrow-up    "></i></div>
+        </div>
+        </div>
+            <div class="div_dash">
+            <p> Total de pedidos </p> 
+        <div class="div_dash_fas">
+            <p> 0 </p>  <div class="fasdash"> <i class="fas fa-equals    "></i></div>
+        </div>
+        </div>
+            </div>
+            <div class="dd2">
+        
+        <div class="div_dash">
+            <p> Usuarios </p> 
+        <div class="div_dash_fas">
+            <p> 1 </p>  <div class="fasdash"> <i class="fas fa-users    "></i></div>
+        </div>
+            
+        </div>
+        <div class="div_dash">
+            <p> Marcas registradas </p> 
+        <div class="div_dash_fas">
+            <p> 0 </p>  <div class="fasdash"> <i class="fas fa-shopping-bag    "></i></div>
+        </div>
+        </div>
+        <div class="div_dash">
+            <p> Productos </p> 
+        <div class="div_dash_fas">
+            <p> 0 </p>  <div class="fasdash"> <i class="fas fa-th    "></i></div>
+        </div>
+        </div>
+        </div>
+    </div>
+    
+    <div class="dash__wrapper2">
+        <div class="dashpatron"></div>
+        <div class="div_dash dashtotal">
+            <p> Total ingresos </p> 
+        <div class="div_dash_fas ddf3">
+            <p> S/. 0.00 </p>  <div class="fasdashtotal"> <i class="fas fa-chart-bar    "></i></div>
+        </div>
+        </div>
+        <div class="dashpatron"></div>
+    </div>
+    </div>
+    </main>
+    <footer>
+       
+    </footer>
+    <script>
+        const btnHeaderMenu = document.querySelector("button.header__menu");
+        const asideSideBar = document.querySelector("aside.aside__bar");
+        btnHeaderMenu.onclick = e => {
+          asideSideBar.classList.toggle("open");
+        }
+      </script>
+      <script>
+        const btnSideBarMenu = document.querySelector("button.sidebar__menu");
+    btnSideBarMenu.onclick = e => {
+      asideSideBar.classList.toggle("open-mobile");
+    }
+      </script>
+      <script>
+          const mql = window.matchMedia('(max-width:500px)');
+    function screenTest(e) {
+      e.matches && asideSideBar.classList.remove("open");
+    }
+    mql.addListener(screenTest);
+      </script>
+</body>
+
+</html>
