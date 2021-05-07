@@ -1,0 +1,27 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body {
+    margin: 100px
+}
+/*Si NO tiene Gap entonces en el input--> Margin: 10px 0 10px 15px*/
+input {
+    margin-left: 15px;
+    height: 25px;
+    width: 500px;
+    padding-left: 8px;
+    border: 1px solid rgb(194, 194, 194);
+}
+/*Si tiene placeholder*/
+::placeholder {
+    color: rgb(194, 194, 194);
+}
+/*Mediaqueries*/
+@media (max-width:900px) {
+    input {width: 400px}
+    }
+@media (max-width:500px) {
+    input {width: 300px}
+    }
