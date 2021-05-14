@@ -1,0 +1,115 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+/*
+#262a4c
+#51b78e
+#f2dac7
+#e3eadf
+#feeacb
+*/
+body {
+    background-color: #e0e2e7;
+    font-family: 'Montserrat', sans-serif;
+}
+li,ul,a {
+    list-style: none;
+    text-decoration: none;
+}
+.header_home {
+   width: 100%;
+   height: 70px;
+   background-color: #ffffff;
+  
+}
+.main_home {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: row;
+    
+}
+.aside_home {
+    width: 330px;
+    height: calc(100vh - 100px);
+    background-color: #ffffff;
+    position: fixed;
+    left: 15px;
+    top: 85px;
+    border-radius: 20px; 
+    display: flex;
+    flex-direction: column;    
+    padding: 10px;
+     
+}
+.sub_huellas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180px;
+    position: absolute;
+    cursor: pointer;   
+   
+}
+.sub_huellas > .fas {
+    color: #51b78e;
+   
+}
+.sub_huellas > p {
+    font-size: 17px;
+    position: absolute;
+    padding-top: 90px;
+    color: #ffffff;
+}
+.huella1, .huella3 {
+    transform: rotate(25deg);
+
+}
+.huella2, .huella4,  .mh1{
+    align-self: flex-end;
+    transform: rotate(340deg);
+    top: 430px;   
+}
+.huella2 {
+    transform: rotate(340deg);
+    top: 148px;
+}
+.huella3, .mh2 {
+    transform: rotate(10deg);
+    top: 285px;
+}
+.minihuellitas {
+    position: absolute;
+    font-size: 40px;
+    color: #ffffff;
+    animation-name: huellas;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-delay: 5s;
+    animation-timing-function: linear;
+}
+@keyframes huellas{
+    100% {
+        color: #262a4c; 
+    }
+}
+.mh1 {top: 500px;left: 60px;}
+.mh2 {top: 200px;left: 30px;
+      animation-duration: 8s;
+      animation-delay: 10s; }
+.mh3 {top: 60px;left: 260px;
+      animation-duration: 6s;
+      animation-delay: 7s;}
+.mh4 {top: 350px;left: 220px;
+      animation-duration: 10s;
+    animation-delay: 3s;}
+.seccion1_home {
+    width: calc(100vw - 380px);
+    height: 2000px;
+    background-color: #e0e2e7;
+    position: relative;
+    left: 380px;
+    
+}
