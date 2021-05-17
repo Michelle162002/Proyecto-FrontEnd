@@ -1,0 +1,484 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body {
+    background-image: url("./Background.png");
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+li,ul,a {
+    list-style: none;
+    text-decoration: none;
+}
+ /*
+ #fcbf72
+ #7e8082
+ */
+.header_pgp {
+    min-height: 60px;
+    width: 900px;
+    display: flex;
+    margin: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    padding: 0 10px 0 30px;
+    align-self: center;
+    background-color: #ffffff; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(180, 180, 180);  
+}
+.header_logo_pgp {
+    height: 50px;
+    width: auto;
+}
+.header_logo_pgp > img {
+    height: 100%;
+    width: auto;
+}
+.header_btn_pgp {
+   align-self: center; 
+   flex-direction: row;
+   display: flex;
+}
+.navegacion_link_pgp {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    padding-right: 30px;
+    font-size: 14px;
+}
+.navegacion_link_pgp a {
+    color: #151515;
+}
+.navegacion_link_pgp a:hover {
+    color:  #fa5b4b;
+}
+.header_buscador_pgp {
+    padding-right: 30px;
+    color: #6c6c6c;
+    font-size: 18px;
+    align-self: center; 
+    cursor: pointer;
+}
+.header_btn_pgp button {
+    border: none;
+    background-color: #fa5b4b;
+    color: #ffffff;
+    border-radius: 5px;
+    padding:9px; 
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.main_pgp {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.parte1_wrapper_pgp {
+    width: 900px;
+    height: calc(100vh - 100px);
+    align-self: center;
+    justify-self: flex-end;
+    flex-direction: column;
+}
+.all_p1_pgp {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 45px;
+
+}
+.p1s1_pgp {
+    padding: 80px 60px 0 70px;
+    flex: 1;
+    
+}
+.title_p1s1_pgp {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+.chachi_title{
+   color: #fa5b4b;
+   font-size: 40px;
+   padding-bottom: 2px;
+
+}
+.help_title {
+    color: #151515;
+    font-size: 45px;
+    font-weight: bold;
+}
+.p1s1_pgp > p {
+    color: #151515;
+    font-size: 20px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+}
+.pensam_p1s1_pgp {
+    flex: 2;
+    background-color: hsl(0, 0%, 100%, 0.5);
+    color:  #7e8082;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    position: relative;
+}
+.pensam_p1s1_pgp .fas {
+    position: absolute;
+    color: hsl(33, 96%, 72%, 0.8) ;
+    top: 85px;
+    left: 250px;
+    font-size: 50px;
+}
+.p1s1_pgp button {
+    flex: 1;
+    border: none;
+    background-color: #fa5b4b;
+    color: #ffffff;
+    border-radius: 5px;
+    padding:9px; 
+    font-size: 14px;
+    cursor: pointer;
+    margin: 20px 20px 10px 20px ;
+}
+.p1s1_pgp button:hover,.header_btn_pgp button:hover {
+    background-color: #db4d40;
+}
+.p1s2_pgp {
+    height: 460px;
+}
+.p1s2_pgp > img {
+    height: 100%;
+    width: auto;
+}
+.p1s3_opciones_pgp {
+    max-width: 900px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links_opciones_pgp {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-self: center;
+    max-width: 800px;
+    height: 80px;
+   
+}
+.link_p1s3 {
+    width: calc(900px / 4);
+    height: 80px;
+    border: 1px solid  #e2aa66;
+    background-color:  #fcbf72;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+.link_p1s3:hover {
+    background-color: #e2aa66;
+}
+
+.link_p1s3 a, .link_p1s3 p {
+    color: #6c6c6c;
+    font-size: 18px;
+}
+.link_p1s3 figure, .link_p1s3 img {
+    height: 60px;
+    width: auto;
+    padding: 0  5px;
+}
+.lpd1 {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    gap: 20px;
+    background-color: #e2aa66;
+}
+.lpd1 p {
+    color: #ffffff;
+    font-size: 20px;
+}
+.lpd1 .fas {
+    font-size: 30px;
+    color: #ffffff
+}
+.lpd2 {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.parte2_pgp {
+    width: 100%;
+    height: calc(100vh + 200px);
+    background-color: hsl(0, 0%, 100%, 0.5);
+    display: flex;
+    justify-content: center;
+}
+.parte2_wrapper_pgp {
+    width: 900px;
+    height: calc(100vh - 100px);
+    align-self: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.title_parte2_pgp{
+    padding: 30px;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title_subtitle {
+    color: #7e8082;
+    font-size: 15px;
+}
+.title_subttile_info {
+    color: #fa5b4b;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0 10px 10px;
+    width: 270px;
+}
+.title_parte2s1 {
+    display: flex;
+    flex-direction: row;
+}
+.perrito_parte2 {
+    height: 90px;
+    width: auto;
+    display: flex;
+    align-self: flex-end;
+    padding-bottom: 8px;
+}
+.perrito_parte2 img, .perrito_parte2 figure {
+    height: 100%;
+    width: auto;
+}
+.vermas_title {
+    display: flex;
+    align-self: center;
+}
+.vermas_title a, .vermas_title .fas {
+    color: #7e8082;
+    padding-left: 10px;
+}
+/*PUblicaciones*/
+
+.publicaciones_home {
+    width: 100%;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #7e808225;
+    border-radius: 15px;
+    padding: 25px ;
+    align-content: center;
+    
+}
+.Publicacion_home {
+    width: 240px;
+    height: fit-content;
+    background-color: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+}
+.publicacion_imagen {
+    width: 240px;
+    height: fit-content;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:#f2d1c7 ;
+    padding: 10px;
+}
+.publicacion_imagen  > img{
+   width: 220px;
+   height: auto;
+   border-radius: 15px;
+}
+.phi2, .phi6, .phi7 {
+    background-color: #e3eadf;
+}
+.phi3, .phi4, .phi8 {
+    background-color: #feeacb;
+}
+.Publicacion_home p {
+    padding: 0 10px 0 10px;
+    color: #262a4c;
+}
+.publicacion_btn {
+    padding:  10px 10px 10px 0;
+}
+.publicacion_btn > button {
+    padding-left: 15px;
+    border: none;
+    background-color: transparent;
+    color: #fcbf72;
+    font-size: 18px;
+    cursor: pointer;
+}
+.parte3_wrapper_pgp {
+    width: 900px;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0px 0 0 30px;
+    position: relative;
+    
+}
+.clsub {
+    padding-top: 30px;
+}
+.tsi3 {
+    width: 520px;  
+    color: #fa5b4b;
+}
+.subtitle_info_emergencia {
+    font-size: 15px;
+    color: #151515;
+    width: 500px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    text-align: justify;
+    margin: 0;
+}
+.pasos_emergencia_parte3 {
+    padding-left: 30px;
+    width: 500px;
+    text-align: justify;
+}
+.pasos_emergencia_parte3 p {
+    padding-top: 5px;
+}
+.number_emergencia {
+    font-size: 20px;
+    color: #fa5b4b;
+    font-weight: bold;
+}
+.emergencia_info {
+    font-size: 15px;
+    padding-left: 15px;
+}
+.bloque_parte3 {
+    background-color: #fa5b4b;
+    width: 150px;
+    height: 100%;
+}
+.imagen_info_parte3 {
+    position: absolute;
+    left: 560px;
+    top: 100px;
+    width: auto;
+    height: 350px;
+}
+.imagen_info_parte3 img, .imagen_info_parte3 figure {
+    height: 100%;
+    width: auto;
+}
+.parte4_pgp {
+    width: 100%;
+    height: calc(100vh - 220px);
+    background-color: hsla(33, 96%, 72%, 0.404);
+    justify-content: center;
+    display: flex;
+}
+.parte4_wrapper_pgp {
+    width: 900px;
+    height: calc(100vh - 220px);
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+}
+.parte4_donaciones{
+    padding-left: 30px;
+}
+.info_donaciones_exp {
+    padding: 20px 10px 20px 10px;
+    font-size: 15px;
+    width: 500px;
+    text-align: justify;
+}
+.donaciones_info button {
+border: none;
+background-color: #fa5b4b;
+color: #ffffff;
+border-radius: 5px;
+padding:9px; 
+font-size: 14px;
+margin-left: 20px;
+cursor: pointer;
+}
+.donaciones_info button:hover {
+    background-color: #db4d40;
+}
+.imagen_parte4 {
+    padding-top: 20px;
+    width: auto;
+    height:250px;
+    position: absolute;
+    left: 320px;
+    top:150px
+}
+.imagen_parte4 img, .imagen_parte4 figure {
+    height: 100%;
+    width: auto;
+}
+.bloque_parte4 {
+    background-color: #fa5b4b;
+    width: 150px;
+    height: 400px;
+}
+.bloque_parte4_cont {
+    background-color: #fa5b4b;
+    width: calc(900px + ((100vw - 900px)/2));
+    height:50px;
+    position:absolute;
+    right: 0px;
+   top:400px
+}
+.ayudanos_span {
+    position: absolute;
+    color: #ffffff;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding: 20px;
+    border-radius: 10px;
+    right: -50px;
+    top: 200px;
+    transform: rotate(270deg);
+}
+.ayudanos_span p {
+    font-size: 40px;
+    font-weight: bold;
+}
+.ayudanos_span .fas {
+    font-size: 60px;
+    padding-left: 20px;
+    transform: rotate(30deg);
+}
