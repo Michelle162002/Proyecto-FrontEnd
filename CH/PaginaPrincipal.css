@@ -35,8 +35,9 @@ li,ul,a {
     box-shadow: 2px 2px 5px rgb(180, 180, 180);  
 }
 .header_logo_pgp {
-    height: 50px;
+    height: 42px;
     width: auto;
+    align-self: center;
 }
 .header_logo_pgp > img {
     height: 100%;
@@ -78,7 +79,25 @@ li,ul,a {
     margin-right: 10px;
     cursor: pointer;
 }
-
+.botones_flotantes {
+    position: fixed;
+    right: 30px;
+    bottom: 10px;
+    gap: 20px;
+}
+.botones_flotantes div {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #fa5b4b;
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
 .main_pgp {
     width: 100%;
     display: flex;
@@ -351,7 +370,7 @@ li,ul,a {
 .clsub {
     padding-top: 30px;
 }
-.tsi3 {
+.tsi3 { 
     width: 520px;  
     color: #fa5b4b;
 }
@@ -399,7 +418,7 @@ li,ul,a {
 }
 .parte4_pgp {
     width: 100%;
-    height: calc(100vh - 220px);
+    height: calc(100vh - 316px);
     background-color: hsla(33, 96%, 72%, 0.404);
     justify-content: center;
     display: flex;
@@ -434,6 +453,9 @@ cursor: pointer;
 }
 .donaciones_info button:hover {
     background-color: #db4d40;
+}
+.donaciones_info {
+    padding-top: 40px;
 }
 .imagen_parte4 {
     padding-top: 20px;
@@ -481,4 +503,63 @@ cursor: pointer;
     font-size: 60px;
     padding-left: 20px;
     transform: rotate(30deg);
+}
+ /*------------------------------------*/
+
+footer {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.el_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.logo_footer img {
+    height: 70px;
+}
+.contacto_footer .fas {
+ padding-right: 10px;
+ padding-top: 10px;
+ color: #fa5b4b;
+}
+.siguenos_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+.siguenos_footer p {
+    font-size: 22px;
+    color: #fa5b4b;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.siguenos_footer img {
+    height: 40px;
+    border-radius: 10px;
+}
+.Contenido_footer, .siguenos_footer, .contacto_footer, .logo_footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contenido_footer p{
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.Contenido_footer .sub_cfooter {
+    font-size: 16px;
+    color: #fa5b4b;
+    font-weight: bold;
+    padding-top: 8px;
 }

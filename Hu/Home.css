@@ -20,49 +20,65 @@ li,ul,a {
 }
 .header_home {
    width: 100%;
-   height: 85px;
+   height: 95px;
    background-color: #ffffff;
    display: flex;
    flex-direction: column;
 }
 .seccion1_headerhome {
-    height: 70px;
+    height: 65px;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 5px 30px;
 }
-.header_logo {
-    height: 60px;
+
+.header_logo_pgp {
+    height: 50px;
     width: auto;
 }
-.header_logo > img {
+.header_logo_pgp > img {
     height: 100%;
     width: auto;
 }
-.header_btn {
+.header_btn_pgp {
    align-self: center; 
    flex-direction: row;
    display: flex;
 }
-.header_btn > button {
-    border: none;
-    background-color: #51b78e;
-    color: #ffffff;
-    border-radius: 25px;
-    padding: 15px; 
-    font-size: 15px;
-    margin-right: 10px;
-    cursor: pointer;
-}
-.header_buscador {
+.navegacion_link_pgp {
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
     padding-right: 30px;
-    color: #262a4c;
-    font-size: 25px;
+    font-size: 14px;
+}
+.navegacion_link_pgp a {
+    color: #151515;
+}
+.navegacion_link_pgp a:hover {
+    color:  #fa5b4b;
+}
+.header_buscador_pgp {
+    padding-right: 30px;
+    color: #6c6c6c;
+    font-size: 18px;
     align-self: center; 
     cursor: pointer;
 }
+.header_btn_pgp button {
+    border: none;
+    background-color: #fa5b4b;
+    color: #ffffff;
+    border-radius: 5px;
+    padding:9px; 
+    font-size: 14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 .header_divisor {
     background-color: #262a4c;
     height: 15px;
