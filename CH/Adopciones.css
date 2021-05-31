@@ -224,7 +224,7 @@
 }
 .publicaciones_home {
     max-width: 98%;
-    height: 1700px;
+    height: 1600px;
     display: flex;
     justify-self: flex-start;
     flex-direction: column;
@@ -284,7 +284,20 @@
 .publicacion_btn > button:hover {
  color:#e2aa66;
 }
-
+.nombre_publicación{
+    padding: 15px;
+    background-color: #fcbf72; 
+    position: relative;
+    
+}
+.Publicacion_home .nombre_publicación {
+    color: #ffffff;
+    padding: 10px 10px 20px 10px;
+    font-size: 18px; 
+}
+.Publicacion_home .nombre_publicación .fas{
+    color: #fa5b4b
+}
 .Publicacion_home .etiqueta_pub {
     padding: 5px;
     background-color: #fa5b4b;
@@ -298,9 +311,7 @@
     margin-right: 5px;
     text-align: center;  
 }
-.Publicacion_home .etencontrado {
-    margin-top: 0px;
-}
+
 /*-----------------FOOTER-------------------*/
 footer {
     width: 100%;

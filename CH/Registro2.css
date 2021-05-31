@@ -33,6 +33,7 @@
     flex-direction: column;
     margin: 20px;
     padding:10px; 
+    box-shadow: 2px 2px 5px rgb(180, 180, 180);  
 }
 .btn_fas_times {
     display: flex;
@@ -113,7 +114,7 @@
     margin-left: 10px;
     margin: 10px;
 }
-.div21_registro input:hover,  .div22_registro input:hover {
+.div21_registro input:hover, .div21_registro select:hover, .div22_registro input:hover {
     border: 2px solid #fa5b4b;
 }
 .div22_registro >div {
