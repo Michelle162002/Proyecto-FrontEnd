@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    body {
+        background-image: url("./Background.png");
+        font-family: 'Montserrat', sans-serif;
+       width:100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    button {
+        font-family: 'Montserrat', sans-serif;
+    }
+    li,ul,a {
+        list-style: none;
+        text-decoration: none;
+    }
+     /*
+     #fcbf72
+     #7e8082
+     */
+    .header_pgp {
+        min-height: 60px;
+        width: 1150px;
+        display: flex;
+        margin: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-self: center;
+        padding: 0 10px 0 30px;
+        background-color: #ffffff; 
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(180, 180, 180);  
+    }
+    .parte4 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 35px;
+        align-items: center;
+    }
+    .header_logo_pgp {
+        height: 42px;
+        width: auto;
+        align-self: center;
+    }
+    .header_logo_pgp > img {
+        height: 100%;
+        width: auto;
+    }
+    .header_btn_pgp {
+       align-self: center; 
+       flex-direction: row;
+       display: flex;
+    }
+    .navegacion_link_pgp {
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        padding-right: 30px;
+        font-size: 14px;
+    }
+    .navegacion_link_pgp a {
+        color: #151515;
+    }
+    .navegacion_link_pgp a:hover {
+        color:  #fa5b4b;
+    }
+    .header_buscador_pgp {
+        padding-right: 30px;
+        color: #6c6c6c;
+        font-size: 18px;
+        align-self: center; 
+        cursor: pointer;
+    }
+    .header_btn_pgp button {
+        border: none;
+        background-color: #fa5b4b;
+        color: #ffffff;
+        border-radius: 5px;
+        padding:9px; 
+        font-size: 14px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .botones_flotantes {
+        position: fixed;
+        right: 30px;
+        bottom: 10px;
+        gap: 20px;
+    }
+    .botones_flotantes div {
+        width: 50px;
+        height: 50px;
+        color: #ffffff;
+        background-color: #fa5b4b;
+        border-radius:50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .main_pgp {
+        width: 100vw;
+        height: calc(100% - 100px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+.banner_delbuscador {
+       width: 700px;
+       height: fit-content;
+       border: 3px solid #ffffff ;
+       border-radius: 20px;
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       padding: 10px;
+       background-color: #fcbf72;
+       margin-bottom: 30px;
+       padding-left: 20px;
+       align-items: center;
+}
+.banner_delbuscador img{
+       height: 90px;
+}
+.banner_delbuscador p {
+    padding: 10px;
+    font-size: 30px;
+    color: #fa5b4b;
+    text-align: justify;
+   
+}
+.all_main {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+.filtro_pgp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    margin-top: 30px;
+
+    border-radius: 10px;
+}
+.title_filtro {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #fa5b4b;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 95%;
+    height: 38px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    margin: 5px;
+}
+.filtro_filtradores input {
+    font-size: 16px;
+    margin-left: 30px;
+    gap: 10px;
+
+}
+.espacio_filtro {
+    margin-right: 5px;
+}
+.titlemayor_filtro {
+    font-size: 20px;
+    margin: 10px;
+    border-bottom: 2px solid #fcbf72;
+    padding-bottom: 2px;
+}
+.filtro_filtradores div {
+    margin-bottom: 30px;
+}
+.divconopciones {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #fcbf72;
+    margin-left: 30px ;
+}
+.filtro_filtradores .fas {
+    color: #fcbf72;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.buscador_delfiltro input {
+    width: 100px;
+    border: 2px solid #fcbf72;
+    padding: 5px;
+    background-color: transparent;
+}
+.tbuscador {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: #fa5b4b;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 600px;
+    height: 55px;
+    font-size: 22px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+.tbuscador input {
+    margin-left: 30px;
+    width: 400px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+}
+/*PUblicaciones*/
+
+.publicaciones_home {
+    width: 850px;
+    height: 1300px;
+    display: flex;
+    justify-self: flex-start;
+    align-self: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 25px;
+    background-color: #7e808225;
+    border-radius: 15px;
+    padding: 25px ;
+    
+}
+.Publicacion_home {
+    width: 240px;
+    height: fit-content;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: flex-start;
+    background-color: #ffffff;
+}
+.publicacion_imagen {
+    width: 240px;
+    height: fit-content;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color:#f2d1c7 ;
+    padding: 10px;
+}
+.publicacion_imagen  > img{
+   width: 220px;
+   height: auto;
+   border-radius: 15px;
+}
+.phi2, .phi6, .phi7 {
+    background-color: #e3eadf;
+}
+.phi3, .phi4, .phi8 {
+    background-color: #feeacb;
+}
+.Publicacion_home p {
+    padding: 0 10px 0 10px;
+    color: #262a4c;
+}
+.publicacion_btn {
+    padding:  10px 10px 10px 0;
+}
+.publicacion_btn > button {
+    padding-left: 15px;
+    border: none;
+    background-color: transparent;
+    color: #fcbf72;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.el_footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+.logo_footer img {
+    height: 70px;
+}
+.contacto_footer .fas {
+ padding-right: 10px;
+ padding-top: 10px;
+ color: #fa5b4b;
+}
+.siguenos_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+.siguenos_footer p {
+    font-size: 22px;
+    color: #fa5b4b;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.siguenos_footer img {
+    height: 40px;
+    border-radius: 10px;
+}
+.Contenido_footer, .siguenos_footer, .contacto_footer, .logo_footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contenido_footer p{
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.Contenido_footer .sub_cfooter {
+    font-size: 16px;
+    color: #fa5b4b;
+    font-weight: bold;
+    padding-top: 8px;
+}

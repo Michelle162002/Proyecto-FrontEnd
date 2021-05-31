@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    body {
+        background-image: url("./Background.png");
+        font-family: 'Montserrat', sans-serif;
+    }
+    button, .divs_label option{
+        font-family: 'Montserrat', sans-serif;
+    }
+    li,ul,a {
+        list-style: none;
+        text-decoration: none;
+    }
+.main_donaciones {
+    background-color: rgba(39, 39, 39, 0.164);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wrapper_donaciones {
+    width: 1024px;
+    height: 100%;
+    margin: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.donaciones_logo {
+    margin: 20px;
+    height: 100px;
+    width: auto;
+}
+.donaciones_logo img{
+    height: 100%;
+    width: auto;
+}
+.intro_donaciones p{
+    width: 600px;
+    text-align: center;
+}
+.informacion_donaciones {
+    width: 660px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px ;
+    border:5px solid #fcbf72;
+    background-color: #ffffff38;
+    border-radius: 10px;
+
+}
+.total_donacion {
+    width: 500px;
+    height: 100px;
+    background-color:  #fcbe7256;
+    color: #fa5b4b;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.totalsoles_donacion {
+    font-size: 40px;
+}
+.formulario_donaciones {
+    margin: 10px;
+}
+.formulario_donaciones_divs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+}
+.sub_form {
+    font-size: 22px;
+}
+.formulario_donaciones_divs > div {
+    padding: 10px;
+    background-color: #fa5b4b;
+    margin: 10px;
+    border-radius: 10px;
+}
+.divs_blancos {
+    color: #ffffff;
+}
+.divs_blancos div{
+    cursor: pointer;
+}
+.divs_inputs input {
+    margin: 10px 0 0 10px;
+    justify-self: center;
+}
+.divs_label div{
+    justify-content: space-between;
+    background-color: unset;
+}
+.divs_label input, .divs_label select {
+    padding: 5px;
+    margin-left: 10px;
+    width: 150px;
+}
+.label_br {
+    margin-left: 22px;
+}
+.input_br {
+    margin: 10px 0 10px 35px;
+    padding: 5px;
+    width: 510px;   
+}
+.form_final {
+    padding-bottom: 20px;
+}
+.final_div1 input {
+    width: 90px;
+}
+.final_div input{
+    width: 190px;
+}
+.final_div1 button {
+    background-color: #fa5b4b;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.fdf > p  {
+    margin: 0 20px 0 20px;
+    text-align: justify;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.formulario_donacionesbtn {
+    border: none;
+    border-radius: 10px;
+    background-color: #fa5b4b;
+    width: 400px;
+    height: 50px;
+    align-self: center;
+    margin: 30px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.formulario_donacionesbtn .fas {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.formulario_donacionesbtn:hover, .final_div1 button:hover, .divs_blancos > div:hover  {
+    background-color: #db4d40;
+    
+}
+@media (max-width: 700px){
+    .wrapper_donaciones {
+        width: 320px;
+        margin: 20px 0 20px 0; ;
+    }
+    .intro_donaciones p{
+        width: 300px;
+        font-size: 15px;
+        text-align: center;
+    }
+    .informacion_donaciones {
+        width: 300px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px ;
+    }
+    .total_donacion {
+        width: 250px;
+        height: 80px;
+        font-size: 22px;
+    }
+    .totalsoles_donacion {
+        font-size: 25px;
+    }
+    .divs_label input, .divs_label select {
+       
+        margin-left: 10px;
+        width: 150px;
+    }
+    .label_br {
+        margin-left: 12px;
+    }
+    .input_br {
+        margin: 10px 0 10px 15px;
+        width: 220px;   
+    }
+    .formulario_donacionesbtn {
+        font-size: 17px;
+        width: 200px;
+    }
+    .formulario_donaciones_divs {  
+        flex-direction: column;
+    }
+    .final_div input{
+        width: 130px;
+
+    }
+    .final_div1 button {
+        background-color: #fa5b4b;
+        color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border: none;
+        font-size: 18px;
+    }
+    .formulario_donaciones_divs > div {
+        margin: 0;
+    }
+    .divs_blancos div {
+        margin-bottom: 10px;
+    }
+    .divs_radio input {
+        width: 55px;
+    }
+}

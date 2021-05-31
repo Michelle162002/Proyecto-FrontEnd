@@ -19,19 +19,19 @@
 .main_registro2 {
     background-color: rgba(39, 39, 39, 0.164);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 .ELdiv_registro2 {
     background-color: #ffffff;
     border-radius: 10px;
-    height: 650px;
     width: 700px;
     display: flex;
     flex-direction: column;
- 
+    margin: 20px;
     padding:10px; 
 }
 .btn_fas_times {
@@ -108,7 +108,7 @@
     flex: 1;
     margin: 10px;
 }
-.div21_registro input,  .div22_registro input {
+.div21_registro input, .div21_registro select,   .div22_registro input {
     padding: 5px;
     margin-left: 10px;
     margin: 10px;
@@ -117,18 +117,19 @@
     border: 2px solid #fa5b4b;
 }
 .div22_registro >div {
-    height: 70px;
+    height: 40px;
     display: flex;
     font-size: 13px;
     align-items: center;
+    margin-left: 15px;
+    margin-bottom: 30px;
 }
 .ya_tienes {
     width: 100%;
    display: flex;
-   justify-content: flex-end;
+   justify-content: center;
    gap:10px;
    margin: 20px 0px 20px 0;
-   padding-right: 30px;
 }
 .ya_tienes a {
     color: #fa5b4b;
@@ -139,14 +140,71 @@
     color: #ffffff;
     border-radius: 5px;
     padding:9px; 
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
     width: 400px;
     display: flex;
     align-self: center;
     justify-content: center;
-    margin:30px;
+    margin:20px;
+    
 }
 .btn_registrof:hover {
     background-color: #db4d40;
+}
+@media (max-width:700px) {
+    .ELdiv_registro2  {
+        height: fit-content;
+        width: 500px;
+        flex-direction: column;
+        margin: 20px;
+       
+    }
+    .div2_registro {
+        width: 480px;
+        flex-direction: column;
+    }
+    .div1_1 {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .div1_registro {
+        flex-direction: column;
+    }
+    .btn_registrof {
+        width: 400px;
+    }
+    .div2_registro {
+        gap: 0px;
+    }
+    .div21_registro {
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+    .ya_tienes {
+        flex-direction: column;
+        align-items: center;
+        gap:5px;
+    }
+}
+@media (max-width:500px) {
+    .ELdiv_registro2, .div2_registro {
+        width: 300px;
+    }
+    .div2_registro {
+        width: 280px;
+    }
+    .btn_registrof {
+        width: 280px;
+    }
+    .div1_2 {
+        flex-wrap: wrap;
+    }
+    .div1_2 button{
+        min-width: 110px;
+    }
+    .div1_2 p {
+        min-width: 150px;
+    }
 }

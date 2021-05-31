@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Donaciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main_donaciones">
+      <div class="wrapper_donaciones">
+        <div class="donaciones_logo">
+           <img src="./Logo_experimental.png" alt="">
+        </div>
+        <div class="intro_donaciones">
+            <p>El 100% de su donación ayudará a dar los ciudados necesarios y a salvar las vidas de las mascotas sin hogar que lo necesitan.</p>
+        </div>
+        <div class="informacion_donaciones">
+          <div class="total_donacion">
+            <p>Tu donación</p>
+            <p class="totalsoles_donacion">S/. 0.00</p>
+          </div>
+          <div class="formulario_donaciones">
+            <p class="sub_form">Monto de la donación</p>
+            <div class="formulario_donaciones_divs divs_blancos">
+                <div>S/. 25.00</div>
+                <div>S/. 50.00</div>
+                <div>S/. 100.00</div>
+                <div>Otro monto</div>
+            </div>
+          </div>
+          <div class="formulario_donaciones">
+            <p class="sub_form">Hacer esta donación...</p>
+            <div class="formulario_donaciones divs_inputs divs_radio">
+                <input type="radio" name="frecuencia" value="1">            Solo una vez
+                <input type="radio" name="frecuencia" value="2">            Semanalmente
+                <input type="radio" name="frecuencia" value="3">            Mensualmente 
+                <input type="radio" name="frecuencia" value="4">            Anualmente
+            </div>
+          </div>
+          <div class="formulario_donaciones">
+            <p class="sub_form">Información de facturación y contacto</p>
+            <div class="formulario_donaciones_divs divs_label">
+                <div><label for="">Nombre</label><input type="text"></div>
+                <div><label for="">Apellido</label><input type="text"></div>
+            </div>
+             <label class="label_br" for="">Correo electrónico</label><br><input class="input_br"type="text">
+            <div class="formulario_donaciones_divs divs_label">
+                <div><label for="">País</label>
+                    <select name="menu">
+                        <option selected>Perú</option>
+                    </select>
+                </div>
+                <div><label for="">Ciudad</label>
+                    <select name="menu">
+                        <option selected>Arequipa</option>
+                        <option selected>Lima</option>
+                        <option selected>Loreto</option>
+                        <option selected>Puno</option>
+                        <option selected>Piura</option>
+                        <option selected>Tacna</option>
+                        <option selected>Trujillo</option>
+                        <option selected>Tumbes</option>
+
+                    </select>
+                </div>
+            </div>
+             <label class="label_br" for="">Dirección</label><br><input class="input_br" type="text">
+          </div>
+          <div class="formulario_donaciones">
+            <p class="sub_form form_final">Detalles del pago</p>
+                <label  class="label_br"for="">Nombre</label><br><input class="input_br"type="text">
+                <label  class="label_br"for="">Número de la tarjeta</label><input class="input_br"type="text">
+                <div class=" formulario_donaciones_divs divs_label">
+                <div class="final_div1"><label for="">CVV</label><input type="text"><button>?</button></div>
+                <div class="final_div"><label for="">Expiración</label><input type="month"></div>
+                </div>
+          </div>
+          <div class="formulario_donaciones">
+            <p class="sub_form form_final">Términos y condiciones</p>
+                <div class="fdf"><p>Revise cuidadosamente la información ingresada anteriormente, ya que las donaciones no son reembolsables.</p> 
+                <p>Si tiene alguna pregunta sobre su donación, contáctenos en hola@chachihelp.org</p>
+                <p><input type="checkbox">   Estoy de acuerdo con los términos y condiciones.</p></div>
+          </div>
+            <button class="formulario_donacionesbtn"><i class="fas fa-lock    "></i> Enviar donación</button>
+        </div>
+      </div>
+    </main>
+</body>
+</html>
