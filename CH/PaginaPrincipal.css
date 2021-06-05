@@ -4,7 +4,7 @@ padding:0;
 box-sizing:border-box;
 }
 body {
-    background-image: url("./Background.png");
+    background-image: url("./Img/Background.png");
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
@@ -21,10 +21,10 @@ li,ul,a {
  #7e8082
  */
 .header_pgp {
-    min-height: 60px;
-    width: 900px;
+    height: 60px;
+    width: 70%;
     display: flex;
-    margin: 20px;
+    margin: 20px ;
     flex-direction: row;
     justify-content: space-between;
     justify-self: center;
@@ -35,7 +35,7 @@ li,ul,a {
     box-shadow: 2px 2px 5px rgb(180, 180, 180);  
 }
 .header_logo_pgp {
-    height: 42px;
+    height: 50px;
     width: auto;
     align-self: center;
 }
@@ -54,7 +54,7 @@ li,ul,a {
     flex-direction: row;
     align-self: center;
     padding-right: 30px;
-    font-size: 14px;
+    font-size: 15px;
 }
 .navegacion_link_pgp a {
     color: #151515;
@@ -79,43 +79,59 @@ li,ul,a {
     margin-right: 10px;
     cursor: pointer;
 }
-.botones_flotantes {
-    position: fixed;
-    right: 30px;
-    bottom: 10px;
-    gap: 20px;
-}
-.botones_flotantes div {
-    width: 50px;
-    height: 50px;
-    color: #ffffff;
-    background-color: #fa5b4b;
-    border-radius:50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    cursor: pointer;
-}
+  /*-----------------MAIN-------------------*/
+  .botones_flotantes {
+               position: fixed;
+               right: 30px;
+               bottom: 10px;
+               gap: 20px;
+              }
+             .botones_flotantes div {
+               width: 60px;
+               height: 60px;
+               color: #ffffff;
+               background-color: #fa5b4b;
+               border-radius:50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               font-size: 38px;
+               margin-bottom: 20px;
+               cursor: pointer;
+              }
+              .botones_flotantes img {
+                  height: 65%;
+              }
+              .botones_flotantes div:hover {
+                  background-color: #db4d40;
+              }
+
+
+
 .main_pgp {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
    
 }
 .parte1_wrapper_pgp {
-    width: 900px;
-    height: calc(100vh - 100px);
+    width: 90%;
+    display: flex;
+    height: calc(100% - 100px);
     align-self: center;
-    justify-self: flex-end;
+    align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
+
 }
 .all_p1_pgp {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 65%;
+    justify-content: center;
     padding-bottom: 45px;
+    margin-right: 0;
 
 }
 .p1s1_pgp {
@@ -185,7 +201,7 @@ li,ul,a {
     width: auto;
 }
 .p1s3_opciones_pgp {
-    max-width: 900px;
+    width: 70%;
     height: 100px;
     padding: 10px;
     display: flex;
@@ -197,19 +213,19 @@ li,ul,a {
     flex-direction: row;
     align-self: center;
     justify-self: center;
-    max-width: 800px;
+    width: 100%;
     height: 80px;
    
 }
 .link_p1s3 {
-    width: calc(900px / 4);
+    width: calc(100% / 5);
     height: 80px;
     border: 1px solid  #e2aa66;
     background-color:  #fcbf72;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 10px;
+    padding: 0 20px;
 }
 .link_p1s3:hover {
     background-color: #e2aa66;
@@ -244,21 +260,26 @@ li,ul,a {
 }
 .parte2_pgp {
     width: 100%;
-    height: calc(100vh + 200px);
+    height: fit-content;
     background-color: hsl(0, 0%, 100%, 0.5);
     display: flex;
+    justify-self: center;
     justify-content: center;
+    align-self: center;
 }
 .parte2_wrapper_pgp {
-    width: 900px;
-    height: calc(100vh - 100px);
+    width: 70%;
+    height:100%;
+    display: flex;
     align-self: center;
+    align-items: center;
     flex-direction: column;
     align-self: flex-start;
+    margin-bottom: 60px;
 }
 .title_parte2_pgp{
     padding: 30px;
-    width: 900px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -299,41 +320,47 @@ li,ul,a {
 }
 /*PUblicaciones*/
 
+
 .publicaciones_home {
-    width: 100%;
-    max-height: 800px;
+    width: calc(85%);
+    height: fit-content;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 25px;
+    justify-self: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
     background-color: #7e808225;
     border-radius: 15px;
-    padding: 25px ;
-    align-content: center;
-    
+    padding: 20px ;
 }
+.contenedor_pub {
+    display: flex;
+    width: calc(98%/3);
+    flex-direction: column;
+    gap: 10px;
+}
+
 .Publicacion_home {
-    width: 240px;
-    height: fit-content;
-    background-color: #ffffff;
+    min-width: calc(98%);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: flex-start;
+    background-color: #ffffff;
 }
 .publicacion_imagen {
-    width: 240px;
-    height: fit-content;
+    min-width: calc(100%);
     border-radius: 15px;
     overflow: hidden;
     background-color:#f2d1c7 ;
     padding: 10px;
+    background-size:cover
 }
 .publicacion_imagen  > img{
-   width: 220px;
-   height: auto;
+   width: 100%;
    border-radius: 15px;
+   background-size:cover
 }
 .phi2, .phi6, .phi7 {
     background-color: #e3eadf;
@@ -342,8 +369,10 @@ li,ul,a {
     background-color: #feeacb;
 }
 .Publicacion_home p {
-    padding: 0 10px 0 10px;
+    padding: 0 20px 0 20px;
     color: #262a4c;
+    font-size: 15px;
+    text-align: justify; 
 }
 .publicacion_btn {
     padding:  10px 10px 10px 0;
@@ -356,15 +385,63 @@ li,ul,a {
     font-size: 18px;
     cursor: pointer;
 }
+.publicacion_btn > button:hover {
+ color:#e2aa66;
+}
+.nombre_publicación{
+    padding: 15px;
+    background-color: #fcbf72; 
+    position: relative;
+    
+}
+.Publicacion_home .nombre_publicación {
+    color: #ffffff;
+    padding: 10px 10px 20px 10px;
+    font-size: 18px; 
+}
+.Publicacion_home .nombre_publicación .fas{
+    color: #fa5b4b
+}
+.Publicacion_home .etiqueta_pub {
+    padding: 5px;
+    background-color: #fa5b4b;
+    color: #ffffff;
+    border-radius: 5px;
+    align-self: flex-end;
+    font-size: 13px;
+    width: 45%;
+    margin-top: -25px;
+    z-index: 20000;
+    margin-right: 5px;
+    text-align: center;  
+}
+.Publicacion_home .etencontrado {
+    margin-top: 0px;
+}
+.Publicacion_home .btn_apadrinar {
+    font-size: 12px;
+    background-color: #fcbf72;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 20px 10px 0 10px;
+    width: 95%;
+}
+.Publicacion_home .btn_apadrinar:hover {
+    color: #ffffff;
+    background-color: #e2aa66;
+}
+
+
 .parte3_wrapper_pgp {
     width: 900px;
-    height: calc(100vh - 200px);
+    height: calc(100%);
     display: flex;
     align-self: center;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0px 0 0 30px;
     position: relative;
+    padding: 0px 0 60px 30px;
     
 }
 .clsub {
@@ -403,7 +480,7 @@ li,ul,a {
 .bloque_parte3 {
     background-color: #fa5b4b;
     width: 150px;
-    height: 100%;
+    min-height: calc(100% + 150px);
 }
 .imagen_info_parte3 {
     position: absolute;
@@ -418,14 +495,14 @@ li,ul,a {
 }
 .parte4_pgp {
     width: 100%;
-    height: calc(100vh - 316px);
+    min-height:580px;
     background-color: hsla(33, 96%, 72%, 0.404);
     justify-content: center;
     display: flex;
 }
 .parte4_wrapper_pgp {
     width: 900px;
-    height: calc(100vh - 220px);
+    height: 100%;
     display: flex;
     align-self: center;
     flex-direction: row;
@@ -504,30 +581,33 @@ cursor: pointer;
     padding-left: 20px;
     transform: rotate(30deg);
 }
- /*------------------------------------*/
-
+/*-----------------FOOTER-------------------*/
 footer {
     width: 100%;
     background-color: hsl(0, 0%, 100%, 0.5); 
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 220px;
 }
 .el_footer {
     display: flex;
+    width: 80%;
     flex-direction: row;
     align-items: center;
     gap: 30px;
     justify-content: center;
+     font-size: 16px;
 }
 .logo_footer img {
-    height: 70px;
+    height: 80px;
 }
+
 .contacto_footer .fas {
  padding-right: 10px;
  padding-top: 10px;
  color: #fa5b4b;
+
 }
 .siguenos_footer {
     display: flex;
@@ -536,7 +616,7 @@ footer {
     width: 350px;
 }
 .siguenos_footer p {
-    font-size: 22px;
+    font-size: 20px;
     color: #fa5b4b;
     font-weight: bold;
     width: 200px;
@@ -544,7 +624,7 @@ footer {
     padding-bottom: 10px;
 }
 .siguenos_footer img {
-    height: 40px;
+    height: 50px;
     border-radius: 10px;
 }
 .Contenido_footer, .siguenos_footer, .contacto_footer, .logo_footer {
@@ -553,13 +633,85 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-.Contenido_footer p{
+.contacto_footer p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+   
+}
+.Contenido_footer p {
     padding-bottom: 5px;
     font-size: 14px;
+    display: flex;
+    justify-content: center;
 }
 .Contenido_footer .sub_cfooter {
-    font-size: 16px;
+    font-size: 18px;
     color: #fa5b4b;
     font-weight: bold;
     padding-top: 8px;
+}
+@media (max-width:1230px) {
+    .navegacion_link_pgp {
+        font-size: 14px;
+}
+@media (max-width:1550px){
+    .all_p1_pgp {
+        width: 90%;
+    }
+    .p1s3_opciones_pgp {
+        width: 100%;
+    }  
+}
+@media (max-width:1200px) {
+    .botones_flotantes div {
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            margin-bottom: 20px;
+           }
+           .botones_flotantes img {
+               height: 55%;
+           }
+           .botones_flotantes {
+            right: 15px;
+            bottom: 5px;
+           }
+    .Publicacion_home .etiqueta_pub {
+    width: 55%;
+    }
+    .title_filtro {
+        padding-left: 10px;
+    }
+    .banner_delbuscador p {
+        font-size: 16px;
+    }
+    .Publicacion_home p {
+        font-size: 14px;
+        padding: 0 15px;
+    }
+    .el_footer {
+        width: 85%;
+        gap: 10px;
+    }
+    .siguenos_footer img {
+        height: 40px;
+    }
+    .logo_footer img {
+        height: 70px;
+    }
+    .Contenido_footer p{
+        padding-bottom: 5px;
+        font-size: 13px;
+        width: 180px;
+    }
+    .Contenido_footer .sub_cfooter {
+        font-size: 16px;
+    }
+    .siguenos_footer p {
+        font-size: 18px;
+        width: 180px;
+    }
+    
 }

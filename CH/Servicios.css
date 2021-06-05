@@ -1,0 +1,110 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        font-family: 'Montserrat', sans-serif;
+    }
+    li,ul,a {
+        list-style: none;
+        text-decoration: none;
+    }
+.main_servicios {
+    background-color: rgba(39, 39, 39, 0.164);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ELdiv_servicios {
+    background-image: url("./Img/Background.png");
+    background-size: 55%;
+    animation-name: deslizandoCH;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    border-radius: 10px;
+    height: 500px;
+    width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 2px 2px 5px rgb(180, 180, 180);  
+    padding-bottom: 20px;
+}
+@keyframes deslizandoCH{
+    0%{
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px 2000px;
+    }
+}
+.titulo_servicio1 {
+    gap: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+.ELtitulo_sv1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #fa5b4b;  
+}
+.opciones_servicios {
+    width: 95%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap:40px;
+    margin: 10px 0 40px 0;
+    border-radius: 10px;
+}
+.servicio_s {
+    width: calc(100% / 4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 40px;
+    background-color: #fcbf72;
+    border-radius: 10px;
+}
+.servicio_s:hover {
+   background-color: #e2aa66;
+}
+.servicio_s img {
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+.servicio_s p {
+    color: #fa5b4b;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20px;
+    font-weight:bold;
+}
+.ELdiv_servicios .fa-times {
+    color: #fa5b4b;
+    font-size: 28px;
+}
+.btn_fas_times {
+    display: flex;
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
