@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Crear_publicacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main_registro2">
+       <div class="ELdiv_registro2">
+           <button class="btn_fas_times"><i class="fas fa-times    "></i></button>
+           <div class="div1_registro">
+               <div class="div1_1"> <img src="./Img/crear_perrito.png" alt=""> <p>Crear una publicación</p></div>
+           </div>
+           <div class="div1_2">
+            <label for="">Tipo de publicación</label>
+            <div>
+            <button class="btnr1_1"> <i class="fas fa-paw    "></i> Encontrado</button>
+            <button class="btnr1_2"> <i class="fas fa-paw    "></i> Perdido</button>
+            <button class="btnr1_2"> <i class="fas fa-paw    "></i> En adopción</button>
+            <button class="btnr1_2"> <i class="fas fa-paw    "></i> Para apadrinar</button>
+            </div>
+        </div>
+           <div class="div2_registro">
+               <div class="div21_registro">
+                <label for="">Especie</label><select  class="select_large"name="menu"><option>...</option></select>
+                   
+                <label for="">Nombre de la mascota</label><input type="text">
+                   <label for="">Descripción de la mascota</label> 
+                   <div class="div_doscolumnas columna_descrip">
+                    <div class="div_columnas"> 
+                    <label for="">Raza</label><select name="menu"><option>...</option></select>
+                    <label for="">Edad</label><select name="menu"><option>...</option></select>
+                    <label for="">Tamaño</label><select name="menu"><option>...</option></select>
+                    </div>
+                    <div class="div_columnas">
+                    <label for="">Sexo</label><select name="menu"><option>...</option></select>
+                    <label for="">Largo del pelaje</label><select name="menu"><option>...</option></select>
+                    <label for="">Color</label><select name="menu"><option>...</option></select>
+                    </div>
+                   </div>
+                   <label for="">Detalles adicionales</label><textarea name=""></textarea>
+                   <label for="">Información importante</label><textarea name=""></textarea>
+                   <label for="">Ubicación </label><input type="text">
+                   <div class="divsss">
+                    <div class="div_columnas"> 
+                   <label for="">Departamento</label><select name="menu"><option>...</option></select></div>
+                   <div class="div_columnas"> <label for="">Provincia</label><select name="menu"><option>...</option></select></div>
+                   </div>
+                   <label  for="">Distrito</label><select class="select_large" name="menu"><option>...</option></select>
+                   <label for="">Foto de perfil</label><input class="image_input" type="file">
+                   <label  for="">Fotos adicionales</label><input class="image_input" type="file">
+               </div>
+            
+            </div>
+            <div class="btn_clearandcancel">  
+                <button class="btn__crear btn2"> <i class="fas fa-chevron-left    "></i> <p> Limpiar </p></button>
+                    <button class="btn__crear btn3"> <i class="fas fa-ban    "></i> <p> Cancelar </p></button>
+           </div>
+            <button class="btn_registrof">Publicar</button>
+            
+       </div>
+    </main>
+</body>
+</html>

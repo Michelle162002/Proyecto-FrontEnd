@@ -1,0 +1,199 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    }
+    body {
+        background-image: url("./Img/Background.png");
+        font-family: 'Montserrat', sans-serif;
+       width:100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    button {
+        font-family: 'Montserrat', sans-serif;
+    }
+    li,ul,a {
+        list-style: none;
+        text-decoration: none;
+    }
+     /*
+     #fcbf72
+     #7e8082
+     */
+
+     /*-----------------HEADER-------------------*/
+    .header_pgp {
+        height: 60px;
+        width: 80%;
+        display: flex;
+        margin: 20px 0 20px 0;
+        flex-direction: row;
+        justify-content: space-between;
+        justify-self: center;
+        padding: 0 10px 0 30px;
+        background-color: #ffffff; 
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgb(180, 180, 180);  
+    }
+    .header_logo_pgp {
+        height: 50px;
+        width: auto;
+        align-self: center;
+    }
+    .header_logo_pgp > img {
+        height: 100%;
+        width: auto;
+    }
+    .header_btn_pgp {
+       align-self: center; 
+       flex-direction: row;
+       display: flex;
+    }
+    .navegacion_link_pgp {
+        gap: 15px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        padding-right: 30px;
+        font-size: 15px;
+    }
+    .navegacion_link_pgp a {
+        color: #151515;
+    }
+    .navegacion_link_pgp a:hover,  .header_buscador_pgp:hover{
+        color:  #fa5b4b;
+    }
+    .header_buscador_pgp {
+        padding-right: 30px;
+        color: #6c6c6c;
+        font-size: 18px;
+        align-self: center; 
+        cursor: pointer;
+    }
+    .header_btn_pgp button {
+        border: none;
+        background-color: #fa5b4b;
+        color: #ffffff;
+        border-radius: 5px;
+        padding:9px; 
+        font-size: 14px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .header_btn_pgp button:hover {
+        background-color: #db4d40;
+    }
+     
+     /*-----------------MAIN-------------------*/
+
+             .botones_flotantes {
+               position: fixed;
+               right: 30px;
+               bottom: 10px;
+               gap: 20px;
+              }
+             .botones_flotantes div {
+               width: 60px;
+               height: 60px;
+               color: #ffffff;
+               background-color: #fa5b4b;
+               border-radius:50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               font-size: 38px;
+               margin-bottom: 20px;
+               cursor: pointer;
+              }
+              .botones_flotantes img {
+                  height: 65%;
+              }
+              .botones_flotantes div:hover {
+                  background-color: #db4d40;
+              }
+
+.main_pgp {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+}
+.all_main {
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+/*-----------------FOOTER-------------------*/
+footer {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+}
+.el_footer {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+     font-size: 16px;
+}
+.logo_footer img {
+    height: 80px;
+}
+
+.contacto_footer .fas {
+ padding-right: 10px;
+ padding-top: 10px;
+ color: #fa5b4b;
+
+}
+.siguenos_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+.siguenos_footer p {
+    font-size: 20px;
+    color: #fa5b4b;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.siguenos_footer img {
+    height: 50px;
+    border-radius: 10px;
+}
+.Contenido_footer, .siguenos_footer, .contacto_footer, .logo_footer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Contenido_footer p{
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.Contenido_footer .sub_cfooter {
+    font-size: 18px;
+    color: #fa5b4b;
+    font-weight: bold;
+    padding-top: 8px;
+}
